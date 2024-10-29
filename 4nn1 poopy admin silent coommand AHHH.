@@ -5,6 +5,7 @@ local TextButton = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
@@ -12,6 +13,7 @@ Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.0294573642, 0, 0.314410478, 0)
 Frame.Size = UDim2.new(0, 336, 0, 141)
+Frame.Draggable = true
 
 TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.fromRGB(83, 93, 90)
@@ -36,7 +38,7 @@ TextButton.Text = "HACKROT"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
 TextButton.MouseButton1Down:Connect(function()
-	game.Players:Chat(">" .. TextBox.Text)
+	game.Players:Chat(TextBox.Text)
 
 	if TextBox.Text == "scary me" then
 		local poopy = ">hat me 15117054326 >shirt me 1243374078 >pants me 1243374078 >bighead me >sparkles me black >particles me 1243374078 >fire me 50 black black"
