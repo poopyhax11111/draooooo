@@ -38,7 +38,7 @@ TextButton.Text = "HACKROT"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
 TextButton.MouseButton1Down:Connect(function()
-	game.Players:Chat(TextBox.Text)
+	game.Players:Chat(">" .. TextBox.Text)
 
 	if TextBox.Text == "scary me" then
 		local poopy = ">hat me 15117054326 >shirt me 1243374078 >pants me 1243374078 >bighead me >sparkles me black >particles me 1243374078 >fire me 50 black black"
