@@ -1,0 +1,67 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(71, 71, 71)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0294573642, 0, 0.314410478, 0)
+Frame.Size = UDim2.new(0, 336, 0, 141)
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(83, 93, 90)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0207179841, 0, 0.0677749962, 0)
+TextBox.Size = UDim2.new(0, 322, 0, 94)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "cmds here LMFAOOO"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 27.000
+TextBox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(106, 106, 105)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.166999996, 0, 0.779999971, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 25)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "HACKROT"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:Connect(function()
+	game.Players:Chat(">" .. TextBox.Text)
+
+	if TextBox.Text == "scary me" then
+		local poopy = ">hat me 15117054326 >shirt me 1243374078 >pants me 1243374078 >bighead me >sparkles me black >particles me 1243374078 >fire me 50 black black"
+		game.Players:Chat(poopy)
+	end
+	
+	if TextBox.Text == "ppcape me" then
+		local po = ">cape me pink 110475366155523"
+		game.Players:Chat(po)
+	end
+	
+	if TextBox.Text == "poland me" then
+		local po = ">shirt me 4780613994 >pants me 5213379586 >face me 12221215411 >fire me 50 50 white >sparkles me white"
+		game.Players:Chat(po)
+	end
+end)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.264880955, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 133, 0, 9)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "HACKROT V2.0.2.2"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
